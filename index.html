@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>@bashkos</title>
-  <link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
   <style>
     body {
       margin: 0;
@@ -16,23 +17,41 @@
     }
     h1 {
       margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
       font-weight: 100;
       font-size: 80px;
       text-transform: uppercase;
       white-space: nowrap;
       color: #34515e;
-      transform: translate3d(-50%, -50%, 0);
     }
     h1 b {
       font-weight: 100;
       color: #c51162;
     }
+    p {
+      margin: 25px 0 0;
+    }
+    .welcome {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate3d(-50%, -50%, 0);
+    }
+    .link {
+      margin: 0 15px;
+      font-size: 50px;
+      text-decoration: none;
+      color: #34515e;
+    }
   </style>
 </head>
 <body>
-  <h1>I write a code and it <b>works</b></h1>
+  <div class="welcome">
+    <h1>I write a code and it <b>works</b></h1>
+    <p>
+      <a class="link" href="https://twitter.com/bashkos" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a class="link" href="https://github.com/bashkos" title="GitHub"><i class="fab fa-github"></i></a>
+    </p>
+  </div>
 </body>
 </html>
