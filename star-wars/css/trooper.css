@@ -1,0 +1,1666 @@
+.trooper-white {
+    background: #fff;
+    /*background: rgba(128, 128, 128, 0.5);*/
+}
+.trooper-black {
+    background: #000;
+    /*background: rgba(255, 0, 0, 0.5);*/
+	-webkit-animation: trooper-back-color-change 3s normal infinite linear;
+    animation: trooper-back-color-change 3s normal infinite linear;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes trooper-back-color-change {
+	0% { background: black; }
+	25% { background: red; }
+	50% { background: blue; }
+	75% { background: green; }
+	100% { background: black; }
+}
+/* Standard syntax */
+@keyframes trooper-back-color-change {
+	0% { background: black; }
+	25% { background: red; }
+	50% { background: blue; }
+	75% { background: green; }
+	100% { background: black; }
+}
+.trooper-back {
+    position: relative;
+    overflow: hidden;
+}
+.trooper-back-line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 260px solid transparent;
+    border-left: 2000px solid #000;
+    border-bottom: 260px solid transparent;
+    border-right: 2000px solid transparent;
+    margin: -260px -2000px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+	-webkit-animation: trooper-line-color-change 3s normal infinite linear;
+    animation: trooper-line-color-change 3s normal infinite linear;
+}
+@-webkit-keyframes trooper-line-color-change {
+	0% { border-left-color: black; }
+	25% { border-left-color: red; }
+	50% { border-left-color: blue; }
+	75% { border-left-color: green; }
+	100% { border-left-color: black; }
+}
+@keyframes trooper-line-color-change {
+	0% { border-left-color: black; }
+	25% { border-left-color: red; }
+	50% { border-left-color: blue; }
+	75% { border-left-color: green; }
+	100% { border-left-color: black; }
+}
+.trooper-back-lines-area {
+	position: absolute;
+	right: 335px;
+    bottom: 235px;
+	-webkit-animation: trooper-line-rotation 15s normal infinite linear;
+    animation: trooper-line-rotation 15s normal infinite linear;
+}
+@-webkit-keyframes trooper-line-rotation {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes trooper-line-rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.trooper-head {
+    position: absolute;
+    bottom: 48px;
+    left: 175px;
+    width: 443px;
+    height: 495px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -webkit-animation: trooper-head-swing 1s normal infinite linear;
+    animation: trooper-head-swing 1s normal infinite linear;
+}
+@-webkit-keyframes trooper-head-swing {
+    0% {
+        bottom: 48px;
+        left: 175px;
+        -webkit-transform: rotate(5deg);
+    }
+    25% {
+        bottom: 20px;
+        left: 185px;
+        -webkit-transform: rotate(13deg);
+    }
+    55% {
+        bottom: 48px;
+        left: 175px;
+        -webkit-transform: rotate(5deg);
+    }
+    75% {
+        bottom: 55px;
+        left: 140px;
+        -webkit-transform: rotate(-3deg);
+    }
+    100% {
+        bottom: 48px;
+        left: 175px;
+        -webkit-transform: rotate(5deg);
+    }
+}
+@keyframes trooper-head-swing {
+    0% {
+        bottom: 48px;
+        left: 175px;
+        transform: rotate(5deg);
+    }
+    25% {
+        bottom: 20px;
+        left: 185px;
+        transform: rotate(13deg);
+    }
+    55% {
+        bottom: 48px;
+        left: 175px;
+        transform: rotate(5deg);
+    }
+    75% {
+        bottom: 55px;
+        left: 140px;
+        transform: rotate(-3deg);
+    }
+    100% {
+        bottom: 48px;
+        left: 175px;
+        transform: rotate(5deg);
+    }
+}
+.trooper-head-1 {
+    position: absolute;
+    width: 336px;
+    height: 250px;
+    left: 54px;
+    top: 1px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(8.7deg);
+    -moz-transform: rotate(8.7deg);
+    -ms-transform: rotate(8.7deg);
+    -o-transform: rotate(8.7deg);
+    transform: rotate(8.7deg);
+}
+.trooper-head-2 {
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    left: 180px;
+    top: 1px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    -ms-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+.trooper-head-3 {
+    position: absolute;
+    width: 80px;
+    height: 16px;
+    left: 344px;
+    top: 99px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(74deg);
+    -moz-transform: rotate(74deg);
+    -ms-transform: rotate(74deg);
+    -o-transform: rotate(74deg);
+    transform: rotate(74deg);
+}
+.trooper-head-4 {
+    position: absolute;
+    width: 210px;
+    height: 180px;
+    left: 189px;
+    top: 14px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(52deg);
+    -moz-transform: rotate(52deg);
+    -ms-transform: rotate(52deg);
+    -o-transform: rotate(52deg);
+    transform: rotate(52deg);
+}
+.trooper-head-5 {
+    position: absolute;
+    left: 351px;
+    top: 136px;
+    width: 45px;
+    height: 26px;
+    -webkit-transform: skewX(-10deg) rotate(2deg);
+    -moz-transform: skewX(-10deg) rotate(2deg);
+    -ms-transform: skewX(-10deg) rotate(2deg);
+    -o-transform: skewX(-10deg) rotate(2deg);
+    transform: skewX(-10deg) rotate(2deg);
+}
+.trooper-head-6 {
+    position: absolute;
+    left: 142px;
+    top: 136px;
+    width: 248px;
+    height: 20px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.trooper-head-7 {
+    position: absolute;
+    left: 111px;
+    top: 103px;
+    width: 42px;
+    height: 27px;
+    -webkit-border-radius: 12px 15px 0 0;
+    -moz-border-radius: 12px 15px 0 0;
+    border-radius: 12px 15px 0 0;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+.trooper-head-8 {
+    position: absolute;
+    left: 104px;
+    top: 106px;
+    width: 35px;
+    height: 55px;
+    -webkit-border-radius: 12px 0 0 0;
+    -moz-border-radius: 12px 0 0 0;
+    border-radius: 12px 0 0 0;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    -ms-transform: rotate(18deg);
+    -o-transform: rotate(18deg);
+    transform: rotate(18deg);
+}
+.trooper-head-9 {
+    position: absolute;
+    left: 122px;
+    top: 103px;
+    width: 35px;
+    height: 60px;
+    -webkit-border-radius: 0 19px 0 0;
+    -moz-border-radius: 0 19px 0 0;
+    border-radius: 0 19px 0 0;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.trooper-head-10 {
+    position: absolute;
+    top: 155px;
+    left: 86px;
+    width: 123px;
+    height: 15px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: skewX(-25deg) rotate(-0.5deg);
+    -moz-transform: skewX(-25deg) rotate(-0.5deg);
+    -ms-transform: skewX(-25deg) rotate(-0.5deg);
+    -o-transform: skewX(-25deg) rotate(-0.5deg);
+    transform: skewX(-25deg) rotate(-0.5deg);
+}
+.trooper-head-11 {
+    position: absolute;
+    top: 144px;
+    left: 88px;
+    width: 15px;
+    height: 20px;
+    -webkit-transform: rotate(15deg) skewY(1deg);
+    -moz-transform: rotate(15deg) skewY(1deg);
+    -ms-transform: rotate(15deg) skewY(1deg);
+    -o-transform: rotate(15deg) skewY(1deg);
+    transform: rotate(15deg) skewY(1deg);
+}
+.trooper-head-12 {
+    position: absolute;
+    top: 144px;
+    left: 195px;
+    width: 160px;
+    height: 20px;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+.trooper-head-13 {
+    position: absolute;
+    top: 162px;
+    left: 190px;
+    width: 190px;
+    height: 15px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(-1deg);
+    -moz-transform: rotate(-1deg);
+    -ms-transform: rotate(-1deg);
+    -o-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+.trooper-head-14 {
+    position: absolute;
+    top: 172px;
+    left: 169px;
+    width: 136px;
+    height: 10px;
+    -webkit-border-radius: 10px 5px 0 0;
+    -moz-border-radius: 10px 5px 0 0;
+    border-radius: 10px 5px 0 0;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.trooper-head-15 {
+    position: absolute;
+    top: 194px;
+    left: 227px;
+    width: 85px;
+    height: 10px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    -webkit-transform: rotate(-31deg);
+    -moz-transform: rotate(-31deg);
+    -ms-transform: rotate(-31deg);
+    -o-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+}
+.trooper-head-16 {
+    position: absolute;
+    top: 175px;
+    left: 181px;
+    width: 26px;
+    height: 60px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(-48deg);
+    -moz-transform: rotate(-48deg);
+    -ms-transform: rotate(-48deg);
+    -o-transform: rotate(-48deg);
+    transform: rotate(-48deg);
+}
+.trooper-head-17 {
+    position: absolute;
+    top: 206px;
+    left: 205px;
+    width: 48px;
+    height: 20px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(-25deg) skewX(30deg);
+    -moz-transform: rotate(-25deg) skewX(30deg);
+    -ms-transform: rotate(-25deg) skewX(30deg);
+    -o-transform: rotate(-25deg) skewX(30deg);
+    transform: rotate(-25deg) skewX(30deg);
+}
+.trooper-head-18 {
+    position: absolute;
+    top: 177px;
+    left: 169px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.trooper-head-19 {
+    position: absolute;
+    top: 179px;
+    left: 216px;
+    width: 53px;
+    height: 32px;
+    -webkit-transform: skewX(-61deg) rotate(-3deg);
+    -moz-transform: skewX(-61deg) rotate(-3deg);
+    -ms-transform: skewX(-61deg) rotate(-3deg);
+    -o-transform: skewX(-61deg) rotate(-3deg);
+    transform: skewX(-61deg) rotate(-3deg);
+}
+.trooper-head-20 {
+    position: absolute;
+    top: 181px;
+    left: 199px;
+    width: 52px;
+    height: 23px;
+    -webkit-transform: rotate(-3deg) skewX(45deg);
+    -moz-transform: rotate(-3deg) skewX(45deg);
+    -ms-transform: rotate(-3deg) skewX(45deg);
+    -o-transform: rotate(-3deg) skewX(45deg);
+    transform: rotate(-3deg) skewX(45deg);
+}
+.trooper-head-21 {
+    position: absolute;
+    top: 162px;
+    left: 146px;
+    width: 252px;
+    height: 252px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.trooper-head-22 {
+    position: absolute;
+    top: 267px;
+    left: 0;
+    width: 110px;
+    height: 110px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.trooper-head-23 {
+    position: absolute;
+    top: 171px;
+    left: 38px;
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.trooper-head-24 {
+    position: absolute;
+    top: 308px;
+    left: 371px;
+    width: 50px;
+    height: 105px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.trooper-head-25 {
+    position: absolute;
+    top: 249px;
+    left: 135px;
+    width: 195px;
+    height: 255px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(-36deg);
+    -moz-transform: rotate(-36deg);
+    -ms-transform: rotate(-36deg);
+    -o-transform: rotate(-36deg);
+    transform: rotate(-36deg);
+}
+.trooper-head-26 {
+    position: absolute;
+    top: 327px;
+    left: 331px;
+    width: 105px;
+    height: 150px;
+    -webkit-border-radius: 0 50% 50% 50%;
+    -moz-border-radius: 0 50% 50% 50%;
+    border-radius: 0 50% 50% 50%;
+    -webkit-transform: rotate(-31deg);
+    -moz-transform: rotate(-31deg);
+    -ms-transform: rotate(-31deg);
+    -o-transform: rotate(-31deg);
+    transform: rotate(-31deg);
+}
+.trooper-head-27 {
+    position: absolute;
+    top: 244px;
+    left: 13px;
+    width: 30px;
+    height: 80px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    -ms-transform: rotate(33deg);
+    -o-transform: rotate(33deg);
+    transform: rotate(33deg);
+}
+.trooper-head-28 {
+    position: absolute;
+    top: 220px;
+    left: 34px;
+    width: 35px;
+    height: 50px;
+    -webkit-transform: rotate(8.7deg);
+    -moz-transform: rotate(8.7deg);
+    -ms-transform: rotate(8.7deg);
+    -o-transform: rotate(8.7deg);
+    transform: rotate(8.7deg);
+}
+.trooper-head-29 {
+    position: absolute;
+    top: 140px;
+    left: 378px;
+    width: 15px;
+    height: 129px;
+    -webkit-border-radius: 0 50% 0 0;
+    -moz-border-radius: 0 50% 0 0;
+    border-radius: 0 50% 0 0;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+.trooper-head-30 {
+    position: absolute;
+    top: 171px;
+    left: 381px;
+    width: 13px;
+    height: 30px;
+    -webkit-border-radius: 0 20% 40% 0;
+    -moz-border-radius: 0 20% 40% 0;
+    border-radius: 0 20% 40% 0;
+    -webkit-transform: skewY(7deg);
+    -moz-transform: skewY(7deg);
+    -ms-transform: skewY(7deg);
+    -o-transform: skewY(7deg);
+    transform: skewY(7deg);
+}
+.trooper-head-31 {
+    position: absolute;
+    top: 170px;
+    left: 367px;
+    width: 18px;
+    height: 30px;
+    -webkit-border-radius: 42% 0 0 40%;
+    -moz-border-radius: 42% 0 0 40%;
+    border-radius: 42% 0 0 40%;
+    -webkit-transform: rotate(7deg) skewX(15deg);
+    -moz-transform: rotate(7deg) skewX(15deg);
+    -ms-transform: rotate(7deg) skewX(15deg);
+    -o-transform: rotate(7deg) skewX(15deg);
+    transform: rotate(7deg) skewX(15deg);
+}
+.trooper-head-32 {
+    position: absolute;
+    top: 181px;
+    left: 369px;
+    width: 26px;
+    height: 25px;
+    -webkit-border-radius: 20% 0 50% 45%;
+    -moz-border-radius: 20% 0 50% 45%;
+    border-radius: 20% 0 50% 45%;
+    -webkit-transform: rotate(-40deg) skewX(-19deg);
+    -moz-transform: rotate(-40deg) skewX(-19deg);
+    -ms-transform: rotate(-40deg) skewX(-19deg);
+    -o-transform: rotate(-40deg) skewX(-19deg);
+    transform: rotate(-40deg) skewX(-19deg);
+}
+.trooper-head-33 {
+    position: absolute;
+    top: 202px;
+    left: 54px;
+    width: 32px;
+    height: 29px;
+    -webkit-border-radius: 50% 0 40% 20%;
+    -moz-border-radius: 50% 0 40% 20%;
+    border-radius: 50% 0 40% 20%;
+    -webkit-transform: skewY(26deg);
+    -moz-transform: skewY(26deg);
+    -ms-transform: skewY(26deg);
+    -o-transform: skewY(26deg);
+    transform: skewY(26deg);
+}
+.trooper-head-34 {
+    position: absolute;
+    top: 196px;
+    left: 55px;
+    width: 32px;
+    height: 20px;
+    -webkit-border-radius: 72% 50% 0 0;
+    -moz-border-radius: 72% 50% 0 0;
+    border-radius: 72% 50% 0 0;
+    -webkit-transform: rotate(10deg) skewX(1deg);
+    -moz-transform: rotate(10deg) skewX(1deg);
+    -ms-transform: rotate(10deg) skewX(1deg);
+    -o-transform: rotate(10deg) skewX(1deg);
+    transform: rotate(10deg) skewX(1deg);
+}
+.trooper-head-35 {
+    position: absolute;
+    top: 201px;
+    left: 75px;
+    width: 15px;
+    height: 31px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+}
+.trooper-head-36 {
+    position: absolute;
+    top: 229px;
+    left: 51px;
+    width: 30px;
+    height: 5px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(26deg);
+    -moz-transform: rotate(26deg);
+    -ms-transform: rotate(26deg);
+    -o-transform: rotate(26deg);
+    transform: rotate(26deg);
+}
+.trooper-head-37 {
+    position: absolute;
+    top: 197px;
+    left: 144px;
+    width: 25px;
+    height: 75px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+    transform: rotate(13deg);
+}
+.trooper-head-38 {
+    position: absolute;
+    top: 266px;
+    left: 138px;
+    width: 60px;
+    height: 25px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-39 {
+    position: absolute;
+    top: 245px;
+    left: 157px;
+    width: 45px;
+    height: 25px;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-40 {
+    position: absolute;
+    top: 208px;
+    left: 145px;
+    width: 115px;
+    height: 50px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(40deg) skewX(-10deg);
+    -moz-transform: rotate(40deg) skewX(-10deg);
+    -ms-transform: rotate(40deg) skewX(-10deg);
+    -o-transform: rotate(40deg) skewX(-10deg);
+    transform: rotate(40deg) skewX(-10deg);
+}
+.trooper-head-41 {
+    position: absolute;
+    top: 258px;
+    left: 183px;
+    width: 25px;
+    height: 60px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-42 {
+    position: absolute;
+    top: 261px;
+    left: 367px;
+    width: 18px;
+    height: 43px;
+    -webkit-border-radius: 50% 50% 50% 0;
+    -moz-border-radius: 50% 50% 50% 0;
+    border-radius: 50% 50% 50% 0;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.trooper-head-43 {
+    position: absolute;
+    top: 262px;
+    left: 344px;
+    width: 35px;
+    height: 20px;
+    -webkit-border-radius: 0 50% 0 0;
+    -moz-border-radius: 0 50% 0 0;
+    border-radius: 0 50% 0 0;
+    -webkit-transform: rotate(-29deg);
+    -moz-transform: rotate(-29deg);
+    -ms-transform: rotate(-29deg);
+    -o-transform: rotate(-29deg);
+    transform: rotate(-29deg);
+}
+.trooper-head-44 {
+    position: absolute;
+    top: 311px;
+    left: 254px;
+    width: 120px;
+    height: 10px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(-23deg);
+    -moz-transform: rotate(-23deg);
+    -ms-transform: rotate(-23deg);
+    -o-transform: rotate(-23deg);
+    transform: rotate(-23deg);
+}
+.trooper-head-45 {
+    position: absolute;
+    top: 298px;
+    left: 254px;
+    width: 104px;
+    height: 13px;
+    -webkit-transform: rotate(-34deg);
+    -moz-transform: rotate(-34deg);
+    -ms-transform: rotate(-34deg);
+    -o-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+}
+.trooper-head-46 {
+    position: absolute;
+    top: 290px;
+    left: 297px;
+    width: 75px;
+    height: 20px;
+    -webkit-transform: rotate(-22deg);
+    -moz-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    -o-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+}
+.trooper-head-47 {
+    position: absolute;
+    top: 328px;
+    left: 256px;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.trooper-head-48 {
+    position: absolute;
+    top: 293px;
+    left: 224px;
+    width: 160px;
+    height: 5px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(-34deg);
+    -moz-transform: rotate(-34deg);
+    -ms-transform: rotate(-34deg);
+    -o-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+}
+.trooper-head-49 {
+    position: absolute;
+    top: 297px;
+    left: 347px;
+    width: 45px;
+    height: 20px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(-16deg);
+    -moz-transform: rotate(-16deg);
+    -ms-transform: rotate(-16deg);
+    -o-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+}
+.trooper-head-50 {
+    position: absolute;
+    left: 60px;
+    top: 290px;
+    width: 20px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-51 {
+    position: absolute;
+    left: 64px;
+    top: 291px;
+    width: 23px;
+    height: 36px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(46deg);
+    -moz-transform: rotate(46deg);
+    -ms-transform: rotate(46deg);
+    -o-transform: rotate(46deg);
+    transform: rotate(46deg);
+}
+.trooper-head-52 {
+    position: absolute;
+    left: 68px;
+    top: 291px;
+    width: 17px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(39deg);
+    -moz-transform: rotate(39deg);
+    -ms-transform: rotate(39deg);
+    -o-transform: rotate(39deg);
+    transform: rotate(39deg);
+}
+.trooper-head-53 {
+    position: absolute;
+    left: 71px;
+    top: 294px;
+    width: 22px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(39deg);
+    -moz-transform: rotate(39deg);
+    -ms-transform: rotate(39deg);
+    -o-transform: rotate(39deg);
+    transform: rotate(39deg);
+}
+.trooper-head-54 {
+    position: absolute;
+    left: 76px;
+    top: 293px;
+    width: 20px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(42deg);
+    -moz-transform: rotate(42deg);
+    -ms-transform: rotate(42deg);
+    -o-transform: rotate(42deg);
+    transform: rotate(42deg);
+}
+.trooper-head-55 {
+    position: absolute;
+    left: 80px;
+    top: 296px;
+    width: 20px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-56 {
+    position: absolute;
+    left: 84px;
+    top: 297px;
+    width: 16px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+.trooper-head-57 {
+    position: absolute;
+    left: 88px;
+    top: 296px;
+    width: 16px;
+    height: 37px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+.trooper-head-58 {
+    position: absolute;
+    left: 91px;
+    top: 298px;
+    width: 15px;
+    height: 36px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+.trooper-head-59 {
+    position: absolute;
+    left: 94px;
+    top: 299px;
+    width: 15px;
+    height: 36px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(36deg);
+    -moz-transform: rotate(36deg);
+    -ms-transform: rotate(36deg);
+    -o-transform: rotate(36deg);
+    transform: rotate(36deg);
+}
+.trooper-head-60 {
+    position: absolute;
+    left: 97px;
+    top: 302px;
+    width: 18px;
+    height: 36px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(37deg);
+    -moz-transform: rotate(37deg);
+    -ms-transform: rotate(37deg);
+    -o-transform: rotate(37deg);
+    transform: rotate(37deg);
+}
+.trooper-head-61 {
+    position: absolute;
+    left: 103px;
+    top: 304px;
+    width: 19px;
+    height: 35px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(31deg);
+    -moz-transform: rotate(31deg);
+    -ms-transform: rotate(31deg);
+    -o-transform: rotate(31deg);
+    transform: rotate(31deg);
+}
+.trooper-head-62 {
+    position: absolute;
+    left: 108px;
+    top: 306px;
+    width: 15px;
+    height: 36px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+.trooper-head-63 {
+    position: absolute;
+    left: 113px;
+    top: 308px;
+    width: 20px;
+    height: 39px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(31deg);
+    -moz-transform: rotate(31deg);
+    -ms-transform: rotate(31deg);
+    -o-transform: rotate(31deg);
+    transform: rotate(31deg);
+}
+.trooper-head-64 {
+    position: absolute;
+    left: 119px;
+    top: 310px;
+    width: 16px;
+    height: 38px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+.trooper-head-65 {
+    position: absolute;
+    left: 124px;
+    top: 315px;
+    width: 15px;
+    height: 37px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.trooper-head-66 {
+    position: absolute;
+    left: 129px;
+    top: 317px;
+    width: 17px;
+    height: 39px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(31deg);
+    -moz-transform: rotate(31deg);
+    -ms-transform: rotate(31deg);
+    -o-transform: rotate(31deg);
+    transform: rotate(31deg);
+}
+.trooper-head-67 {
+    position: absolute;
+    left: 135px;
+    top: 321px;
+    width: 19px;
+    height: 39px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(34deg);
+    -moz-transform: rotate(34deg);
+    -ms-transform: rotate(34deg);
+    -o-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+.trooper-head-68 {
+    position: absolute;
+    left: 140px;
+    top: 324px;
+    width: 18px;
+    height: 38px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-69 {
+    position: absolute;
+    left: 145px;
+    top: 328px;
+    width: 15px;
+    height: 38px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(38deg);
+    -moz-transform: rotate(38deg);
+    -ms-transform: rotate(38deg);
+    -o-transform: rotate(38deg);
+    transform: rotate(38deg);
+}
+.trooper-head-70 {
+    position: absolute;
+    left: 149px;
+    top: 331px;
+    width: 16px;
+    height: 38px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(41deg);
+    -moz-transform: rotate(41deg);
+    -ms-transform: rotate(41deg);
+    -o-transform: rotate(41deg);
+    transform: rotate(41deg);
+}
+.trooper-head-71 {
+    position: absolute;
+    left: 152px;
+    top: 337px;
+    width: 25px;
+    height: 40px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(44deg);
+    -moz-transform: rotate(44deg);
+    -ms-transform: rotate(44deg);
+    -o-transform: rotate(44deg);
+    transform: rotate(44deg);
+}
+.trooper-head-72 {
+    position: absolute;
+    left: 157px;
+    top: 340px;
+    width: 22px;
+    height: 39px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(44deg);
+    -moz-transform: rotate(44deg);
+    -ms-transform: rotate(44deg);
+    -o-transform: rotate(44deg);
+    transform: rotate(44deg);
+}
+.trooper-head-73 {
+    position: absolute;
+    left: 163px;
+    top: 342px;
+    width: 17px;
+    height: 40px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(46deg);
+    -moz-transform: rotate(46deg);
+    -ms-transform: rotate(46deg);
+    -o-transform: rotate(46deg);
+    transform: rotate(46deg);
+}
+.trooper-head-74 {
+    position: absolute;
+    left: 8px;
+    top: 330px;
+    width: 173px;
+    height: 53px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(27.7deg);
+    -moz-transform: rotate(27.7deg);
+    -ms-transform: rotate(27.7deg);
+    -o-transform: rotate(27.7deg);
+    transform: rotate(27.7deg);
+}
+.trooper-head-75 {
+    position: absolute;
+    left: 71px;
+    top: 288px;
+    width: 35px;
+    height: 10px;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.trooper-head-76 {
+    position: absolute;
+    left: 92px;
+    top: 295px;
+    width: 35px;
+    height: 10px;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.trooper-head-77 {
+    position: absolute;
+    left: 109px;
+    top: 303px;
+    width: 35px;
+    height: 10px;
+    -webkit-transform: rotate(26deg);
+    -moz-transform: rotate(26deg);
+    -ms-transform: rotate(26deg);
+    -o-transform: rotate(26deg);
+    transform: rotate(26deg);
+}
+.trooper-head-78 {
+    position: absolute;
+    left: 138px;
+    top: 320px;
+    width: 35px;
+    height: 10px;
+    -webkit-transform: rotate(34deg);
+    -moz-transform: rotate(34deg);
+    -ms-transform: rotate(34deg);
+    -o-transform: rotate(34deg);
+    transform: rotate(34deg);
+}
+.trooper-head-79 {
+    position: absolute;
+    left: 160px;
+    top: 334px;
+    width: 25px;
+    height: 10px;
+    -webkit-transform: rotate(41deg);
+    -moz-transform: rotate(41deg);
+    -ms-transform: rotate(41deg);
+    -o-transform: rotate(41deg);
+    transform: rotate(41deg);
+}
+.trooper-head-80 {
+    position: absolute;
+    left: 256px;
+    top: 424px;
+    width: 19px;
+    height: 44px;
+    -webkit-border-radius: 50% 0 35% 45%;
+    -moz-border-radius: 50% 0 35% 45%;
+    border-radius: 50% 0 35% 45%;
+}
+.trooper-head-81 {
+    position: absolute;
+    left: 263px;
+    top: 422px;
+    width: 38px;
+    height: 20px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(27deg) skewX(-35deg);
+    -moz-transform: rotate(27deg) skewX(-35deg);
+    -ms-transform: rotate(27deg) skewX(-35deg);
+    -o-transform: rotate(27deg) skewX(-35deg);
+    transform: rotate(27deg) skewX(-35deg);
+}
+.trooper-head-82 {
+    position: absolute;
+    left: 283px;
+    top: 438px;
+    width: 19px;
+    height: 28px;
+    -webkit-border-radius: 0 40% 50% 0;
+    -moz-border-radius: 0 40% 50% 0;
+    border-radius: 0 40% 50% 0;
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.trooper-head-83 {
+    position: absolute;
+    left: 257px;
+    top: 440px;
+    width: 43px;
+    height: 26px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(13deg);
+    -moz-transform: rotate(13deg);
+    -ms-transform: rotate(13deg);
+    -o-transform: rotate(13deg);
+    transform: rotate(13deg);
+}
+.trooper-head-84 {
+    position: absolute;
+    left: 360px;
+    top: 383px;
+    width: 20px;
+    height: 79px;
+    -webkit-border-radius: 0 20% 50% 0;
+    -moz-border-radius: 0 20% 50% 0;
+    border-radius: 0 20% 50% 0;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.trooper-head-85 {
+    position: absolute;
+    left: 326px;
+    top: 421px;
+    width: 20px;
+    height: 54px;
+    -webkit-border-radius: 30% 0% 0 46%;
+    -moz-border-radius: 30% 0% 0 46%;
+    border-radius: 30% 0% 0 46%;
+    -webkit-transform: rotate(32deg) skewY(-30deg);
+    -moz-transform: rotate(32deg) skewY(-30deg);
+    -ms-transform: rotate(32deg) skewY(-30deg);
+    -o-transform: rotate(32deg) skewY(-30deg);
+    transform: rotate(32deg) skewY(-30deg);
+}
+.trooper-head-86 {
+    position: absolute;
+    left: 352px;
+    top: 400px;
+    width: 28px;
+    height: 28px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.trooper-head-87 {
+    position: absolute;
+    left: 379px;
+    top: 383px;
+    width: 4px;
+    height: 43px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+.trooper-head-88 {
+    position: absolute;
+    left: 363px;
+    top: 380px;
+    width: 19px;
+    height: 8px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(2deg) skewX(-10deg);
+    -moz-transform: rotate(2deg) skewX(-10deg);
+    -ms-transform: rotate(2deg) skewX(-10deg);
+    -o-transform: rotate(2deg) skewX(-10deg);
+    transform: rotate(2deg) skewX(-10deg);
+}
+.trooper-head-89 {
+    position: absolute;
+    left: 358px;
+    top: 378px;
+    width: 5px;
+    height: 20px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.trooper-head-90 {
+    position: absolute;
+    left: 373px;
+    top: 425px;
+    width: 18px;
+    height: 21px;
+    -webkit-transform: rotate(23deg) skewY(13deg);
+    -moz-transform: rotate(23deg) skewY(13deg);
+    -ms-transform: rotate(23deg) skewY(13deg);
+    -o-transform: rotate(23deg) skewY(13deg);
+    transform: rotate(23deg) skewY(13deg);
+}
+.trooper-head-91 {
+    position: absolute;
+    left: 399px;
+    top: 407px;
+    width: 30px;
+    height: 37px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: rotate(-21deg);
+    -moz-transform: rotate(-21deg);
+    -ms-transform: rotate(-21deg);
+    -o-transform: rotate(-21deg);
+    transform: rotate(-21deg);
+}
+.trooper-head-92 {
+    position: absolute;
+    left: 397px;
+    top: 416px;
+    width: 31px;
+    height: 35px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: rotate(55deg);
+    -moz-transform: rotate(55deg);
+    -ms-transform: rotate(55deg);
+    -o-transform: rotate(55deg);
+    transform: rotate(55deg);
+}
+.trooper-head-93 {
+    position: absolute;
+    left: 385px;
+    top: 425px;
+    width: 30px;
+    height: 25px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(35deg);
+    -moz-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+.trooper-head-94 {
+    position: absolute;
+    left: 392px;
+    top: 436px;
+    width: 31px;
+    height: 15px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+}
+.trooper-head-95 {
+    position: absolute;
+    left: 394px;
+    top: 394px;
+    width: 20px;
+    height: 25px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+}
+.trooper-head-96 {
+    position: absolute;
+    left: 387px;
+    top: 410px;
+    width: 15px;
+    height: 15px;
+}
+.trooper-head-97 {
+    position: absolute;
+    left: 386px;
+    top: 419px;
+    width: 27px;
+    height: 25px;
+    -webkit-border-radius: 50% 0 0 0;
+    -moz-border-radius: 50% 0 0 0;
+    border-radius: 50% 0 0 0;
+}
+.trooper-head-98 {
+    position: absolute;
+    left: 347px;
+    top: 428px;
+    width: 15px;
+    height: 25px;
+}
+.trooper-head-99 {
+    position: absolute;
+    left: 326px;
+    top: 421px;
+    width: 20px;
+    height: 54px;
+    -webkit-border-radius: 50% 0 0 50%;
+    -moz-border-radius: 50% 0 0 50%;
+    border-radius: 50% 0 0 50%;
+    -webkit-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    -ms-transform: rotate(32deg);
+    -o-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+.trooper-head-99 {
+    position: absolute;
+    left: 289px;
+    top: 374px;
+    width: 97px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.trooper-body {
+    position: absolute;
+    width: 730px;
+    height: 184px;
+    bottom: 0;
+    right: 5%;
+}
+.trooper-body-1 {
+    position: absolute;
+    left: -10px;
+    top: 24px;
+    width: 750px;
+    height: 425px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+}
+.trooper-body-2 {
+    position: absolute;
+    left: 132px;
+    top: 65px;
+    width: 75px;
+    height: 162px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: rotate(-22deg);
+    -moz-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
+    -o-transform: rotate(-22deg);
+    transform: rotate(-22deg);
+}
+.trooper-body-3 {
+    position: absolute;
+    left: 142px;
+    top: 65px;
+    width: 45px;
+    height: 162px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.trooper-body-4 {
+    position: absolute;
+    left: 90px;
+    top: 81px;
+    width: 65px;
+    height: 112px;
+    -webkit-border-radius: 50% 0 0 0;
+    -moz-border-radius: 50% 0 0 0;
+    border-radius: 50% 0 0 0;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.trooper-body-5 {
+    position: absolute;
+    left: 542px;
+    top: 29px;
+    width: 14px;
+    height: 165px;
+    -webkit-border-radius: 0 50% 50% 0;
+    -moz-border-radius: 0 50% 50% 0;
+    border-radius: 0 50% 50% 0;
+    -webkit-transform: rotate(-27deg);
+    -moz-transform: rotate(-27deg);
+    -ms-transform: rotate(-27deg);
+    -o-transform: rotate(-27deg);
+    transform: rotate(-27deg);
+}
+.trooper-body-6 {
+    position: absolute;
+    left: 277px;
+    top: -1px;
+    width: 250px;
+    height: 115px;
+    -webkit-border-radius: 0 0 50% 50%;
+    -moz-border-radius: 0 0 50% 50%;
+    border-radius: 0 0 50% 50%;
+}
+.trooper-body-7 {
+    position: absolute;
+    left: 209px;
+    top: -1px;
+    width: 100px;
+    height: 50px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
+.trooper-body-8 {
+    position: absolute;
+    left: 210px;
+    top: 41px;
+    width: 100px;
+    height: 25px;
+    -webkit-transform: rotate(28deg);
+    -moz-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+    transform: rotate(28deg);
+}
+.trooper-body-9 {
+    position: absolute;
+    left: 186px;
+    top: 57px;
+    width: 122px;
+    height: 45px;
+    -webkit-border-radius: 50% 50% 0 0;
+    -moz-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    -webkit-transform: rotate(28deg);
+    -moz-transform: rotate(28deg);
+    -ms-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+    transform: rotate(28deg);
+}
